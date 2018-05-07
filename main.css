@@ -1,0 +1,86 @@
+body {
+    font-family: 'Cabin Condensed', sans-serif;
+    position: relative;
+    padding: 0;
+    margin: 0;
+    }
+
+nav {
+    padding: 15px 0;
+    margin: 0;
+    margin-bottom: 15px;
+    position: fixed;
+    z-index: 2;
+    display: inline;
+    width: 100%;
+    background-color: rgb(147, 175, 228);
+    border: 5px solid rgba(19, 85, 146, 0.7);
+}
+
+
+.nav a {
+    margin-left: 2%;
+    margin-right: 2%;
+    float: right;
+    padding: 10pt;
+
+    font-size: 25px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid rgba(22, 223, 55, 0.7);
+}
+
+.main-page {
+    float: left;
+    border: 5px solid rgba(218, 13, 23, 0.7); 
+}
+
+.main {
+    position: absolute;
+    top: 15%;
+    width: 60%;
+    margin: 0 auto;
+    margin-left: 15px;
+}
+
+.first-page {
+    float: left;
+}
+
+.img {
+    position: relative;
+}
+
+.main-img {
+    float: left;
+    margin-right: 20px;
+}
+
+
+.viz {
+    position: absolute;
+    top: 15%;
+    right: 0%;
+    width: 35%;
+    border: 5px solid rgba(41, 21, 22, 0.7);
+    /*display: block;*/
+    float: right;
+    
+}
+
+footer {
+    position: fixed;
+    width: 100%;
+    bottom: 0%;
+    border: 5px solid rgba(41, 21, 22, 0.7);
+    align-items: center;
+  }
+
+.icons {
+    align-items: center;
+}
+
+  .icons a {
+    display: inline-block;
+    
+  }

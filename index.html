@@ -3,51 +3,63 @@
 <head>
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Weather API project</title>
+    <title>Some visualization project</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
     <!--<script src="main.js"></script>-->
 </head>
 <body>
-    <header>
-        <div>
-            <nav>
-                <ul>
-                    <li><a href='index.html'>Main Page</a></li>
-                    <li><a href='#'>Plots</a></li>
-                    <li><a href='#'>Comparison</a></li>
-                    <li><a href='#'>Data</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-
+    <nav>
+        
+            <span class='main'>
+                <a class='main-page' href='index.html'>Main Page</a></li>
+            </span>
+            <span class='nav'>
+                <a href='#'>Visualizations</a>
+                <a href='#'>Comparison</a>
+                <a href='#'>Data</a>
+            </span>
+        
+    </nav>
+    
     <div class='main'>
-        <H1>Main Header</H1>
-        <img src="#" alt="some descriptions"/>
-        <p>Description</p>
+        <div>
+            <H1>Where does it come from?</H1>
+        </div>
+        <div class='first-page'>
+            <div class='img'>
+                <img class='main-img' src="figures/fig1.png" height="250" width="250" alt="some descriptions"/>
+            </div>
+            <p class='main-p'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+            
+        </div>
     </div>
     <div class='viz'>
-        <H2>Small header</H2>
-        <table>
-            <tr>
-                <td><a href="#"><img src="first pic" alt="first pic"/></a></td>
-                <td><a href="#"><img src="second pic" alt="second pic"/></a></td>
-            </tr>
-            <tr>
-                <td><a href="#"><img src="third pic" alt="third pic"/></a></td>
-                <td><a href="#"><img src="fourth pic" alt="fourth pic"/></a></td>
-            </tr>
-        </table>
+        <div>
+            <H2>Small header</H2>
+        </div>
+        <div>
+                <table>
+                        <tr>
+                            <td><a href="#"><img src="figures/fig1.png" height="200" width="200" alt="first pic"/></a></td>
+                            <td><a href="#"><img src="figures/fig2.png" height="200" width="200" alt="second pic"/></a></td>
+                        </tr>
+                        <tr>
+                            <td><a href="#"><img src="figures/fig3.png" height="200" width="200" alt="third pic"/></a></td>
+                            <td><a href="#"><img src="figures/fig4.png" height="200" width="200" alt="fourth pic"/></a></td>
+                        </tr>
+                    </table>
+        </div>  
     </div>
-    <div class='footer'>
-        <ul class="icons">
-            <li><a href="#"><span>LinkedIn</span></a></li>
-            <li><a href="#"><span>Github</span></a></li>
-            <li><a href="#"><span>Twitter</span></a></li>
-        </ul>
-        <p>Copyright <a href="gw.boot">Coding Bootcamp 2017</a></p>
-    </div>
+    <footer>
+        <div class="icons">
+            <span><a href="#" target="blank"><span>LinkedIn</span></a></span>
+            <span><a href="#" target="blank"><span>Github</span></a></span>
+            <span><a href="#" target="blank"><span>Twitter</span></a></span>
+        </div>
+        <p>Copyright <a href="gw.boot" target="blank">Coding Bootcamp 2017</a></p>
+    </footer>
 
     
 </body>
