@@ -6,24 +6,30 @@ body {
     }
 
 nav {
-    padding: 15px 0;
+    /*padding: 15px 0;*/
     margin: 0;
     margin-bottom: 15px;
     position: fixed;
     z-index: 2;
-    display: inline;
+    /*display: inline;*/
     width: 100%;
+    justify-content: center;
+    display: flex;
+    flex-flow: row wrap;
+    /*justify-content: flex-end;*/
+    display: inline-block;
     background-color: rgb(147, 175, 228);
     border: 5px solid rgba(19, 85, 146, 0.7);
 }
 
 
 .nav a {
-    margin-left: 2%;
-    margin-right: 2%;
-    float: right;
+    /*margin-left: 2%;
+    margin-right: 2%;*/
+    /*float: right;*/
     padding: 10pt;
-
+    
+    float: right;
     font-size: 25px;
     font-weight: bold;
     text-align: center;
@@ -31,16 +37,28 @@ nav {
 }
 
 .main-page {
+    
     float: left;
     border: 5px solid rgba(218, 13, 23, 0.7); 
 }
 
+.nav-main  {
+    justify-content: center;
+    align-items: center;
+    display: inline-block;
+    border: 5px solid rgba(235, 232, 55, 0.7);
+}
+
 .main {
     position: absolute;
+    z-index: 1;
+    
     top: 15%;
+    /*bottom: 20%;*/
     width: 60%;
     margin: 0 auto;
-    margin-left: 15px;
+    padding: 20px, 50px;
+    border: 2px solid rgba(105, 231, 32, 0.7);
 }
 
 .first-page {
@@ -56,9 +74,13 @@ nav {
     margin-right: 20px;
 }
 
+.main-p {
+    
+}
+
 
 .viz {
-    position: absolute;
+    position: fixed;
     top: 15%;
     right: 0%;
     width: 35%;
@@ -74,6 +96,8 @@ footer {
     bottom: 0%;
     border: 5px solid rgba(41, 21, 22, 0.7);
     align-items: center;
+    background: azure;
+    z-index: 2;
   }
 
 .icons {
