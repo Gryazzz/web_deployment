@@ -4,15 +4,16 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title>Test page</title>
-    <!--<meta name="viewport" content="width=device-width, initial-scale=1">-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" media="screen" href="test.css" />
+    <link href="https://fonts.googleapis.com/css?family=Cabin+Condensed" rel="stylesheet">
     <!--<script src="main.js"></script>-->
 </head>
 <body>
     <div class="grid">
         <header>
             <div class='header-wrap'>
-                <div class='main-wrap'>
+                <div class='main-link-wrap'>
                     <a class='main-link' href='index.html'>Main Page</a>
                 </div>
                 <nav class='nav-wrap'>
@@ -24,9 +25,12 @@
         </header>
       
         <main>
-            <H1>Main header with some description</H1>
-            <img src="figures/fig1.png" height="250" width="250" alt="some descriptions"/>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
+            <div class='main-wrap'>
+                <H1>Main header with some description</H1>
+                <div class='main-img-wrap'>
+                    <img class='main-img' src="figures/fig1.png" height="250" width="250" alt="some descriptions"/>
+                </div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut 
                         labore et dolore magna aliqua. Lectus proin nibh nisl condimentum id venenatis. Dui vivamus arcu felis bibendum.
                         Cras semper auctor neque vitae tempus. Est lorem ipsum dolor sit amet. Elit duis tristique sollicitudin nibh sit amet
                         commodo nulla. Diam sollicitudin tempor id eu. Consequat nisl vel pretium lectus quam id leo. Dignissim suspendisse in
@@ -44,28 +48,41 @@
                         consectetur lorem donec. Tincidunt tortor aliquam nulla facilisi. Ultricies mi eget mauris pharetra. Imperdiet dui
                         accumsan sit amet nulla facilisi morbi tempus iaculis. Sem integer vitae justo eget magna. Ut porttitor leo a diam
                         sollicitudin tempor id eu nisl. Libero justo laoreet sit amet cursus sit amet dictum.<br>
-                        
+
                         habitant morbi tristique senectus et netus et malesuada fames. Proin sed libero enim sed faucibus turpis in.
                         Eu feugiat pretium nibh ipsum consequat nisl vel pretium lectus. Eu tincidunt tortor aliquam nulla facilisi cras.
                         Aliquam vestibulum morbi blandit cursus risus at ultrices. Nam aliquam sem et tortor consequat id. Iaculis at erat
                         pellentesque adipiscing commodo elit at. Amet cursus sit amet dictum sit amet. Faucibus nisl tincidunt eget nullam.
                         Mi ipsum faucibus vitae aliquet nec. Mattis rhoncus urna neque viverra justo nec. Eget arcu dictum varius duis at
                         consectetur lorem donec. Tincidun
-            </p> 
+                </p>
+            </div>
         </main>
       
-        <aside class="sidebar-right">
-            <H2>Small header</H2>
-                <table>
+        <aside class="aside">
+            <div class='aside-wrap'>
+            
+                <H2 class='aside-h2'>Small header</H2>
+
+                <div class='table-wrap'>
+
+                    <a href="#"><img src="figures/fig1.png" height="200" width="200" alt="first pic"/></a>
+                    <a href="#"><img src="figures/fig2.png" height="200" width="200" alt="second pic"/></a>
+                    <a href="#"><img src="figures/fig3.png" height="200" width="200" alt="third pic"/></a>
+                    <a href="#"><img src="figures/fig4.png" height="200" width="200" alt="fourth pic"/></a>
+
+                <!--<table class='aside-table'>
                     <tr>
-                        <td><a href="#"><img src="figures/fig1.png" height="200" width="200" alt="first pic"/></a></td>
-                        <td><a href="#"><img src="figures/fig2.png" height="200" width="200" alt="second pic"/></a></td>
+                        <td><a href="#"><img src="figures/fig1.png"  alt="first pic"/></a></td>
+                        <td><a href="#"><img src="figures/fig2.png"  alt="second pic"/></a></td>
                     </tr>
                     <tr>
-                        <td><a href="#"><img src="figures/fig3.png" height="200" width="200" alt="third pic"/></a></td>
-                        <td><a href="#"><img src="figures/fig4.png" height="200" width="200" alt="fourth pic"/></a></td>
+                        <td><a href="#"><img src="figures/fig3.png"  alt="third pic"/></a></td>
+                        <td><a href="#"><img src="figures/fig4.png"  alt="fourth pic"/></a></td>
                     </tr>
-                </table>
+                </table>-->
+                </div>
+            </div>
         </aside>
         
         <footer>

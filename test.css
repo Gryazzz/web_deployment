@@ -1,6 +1,8 @@
 body {
+    font-family: 'Cabin Condensed', sans-serif;
     /*text-align: center;*/
     margin: 0;
+    padding: 0;
     max-width: 100%;
     background: rgb(175, 240, 245);
 }
@@ -9,11 +11,11 @@ header,
 aside,
 main,
 footer {
-    background: rgb(150, 166, 175);
+    background: rgb(186, 209, 223);
     padding: 3px;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /*align-items: center;*/
+    /*justify-content: center;*/
 }
 
 .grid {
@@ -22,31 +24,105 @@ footer {
     grid-template-rows: 45px calc(100vh - 90px) 45px; /*limitation on height*/
     /*grid-template-rows: repeat(3, 100px);*/
     grid-gap: 2px;
+    
 }
 
+
+/* HEADER ------------------------------ */
 header {
-    order: 1;
     grid-row: 1;
     grid-column: 1 / 3;
+    background: rgb(192, 214, 248);
 }
+
 .header-wrap {
-    
-        
+    /*position: sticky;*/
+    /*top: 0;*/
+    align-items: center;
+    display: flex;
+    width: 100%;
+}
+
+.main-link-wrap {
+    margin-left: 30px;
+    float: left;
     
 }
 
+.nav-wrap {
+    float: right;
+    position: absolute;
+    right: 15px;
+    
+}
+
+
+/*MAIN ------------------------------ */
 main {
     grid-row: 2;
     grid-column: 1 / 2;
     overflow: auto;
-  }
+}
 
-.sidebar-right {
+.main-wrap {
+    height: calc(100vh - 90px);
+    float: left;
+    padding-left: 40px;
+    padding-right: 40px;
+    text-align: justify;
+}
+
+.main-img-wrap {
+    position: relative;
+}
+
+.main-img {
+    float: left;
+    margin-right: 40px;
+    margin-bottom: 40px;
+}
+
+
+/*ASIDE ------------------------------ */
+.aside {
     grid-row: 2;
     grid-column: 2 / 3;
+    background: rgb(142, 196, 243);
+    overflow: auto;
   }
 
+.aside-wrap {
+    position: relative;
+    text-align: center;
+    width: 100%;
+   
+}
+
+.aside-h2 {
+    margin-bottom: 15px;
+    
+}
+
+/* TABLE ------------------------------ */
+.table-wrap {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 50% 50%;
+    /*grid-template-rows: repeat(3, 100px);*/
+    grid-gap: 2px;
+    position: relative;
+    
+}
+
+.table-wrap a {
+    float: initial;
+}
+
+
+/*FOOTER ------------------------------ */  
 footer {
     grid-row: 3;
     grid-column: 1 / 3;
+    background: rgb(169, 169, 240);
   }
+
