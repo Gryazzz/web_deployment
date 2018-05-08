@@ -7,6 +7,10 @@ body {
     background: rgb(21, 66, 70);
 }
 
+*{ 
+    box-sizing:border-box;
+}
+
 header,
 aside,
 main,
@@ -50,8 +54,9 @@ header {
 
 .nav-wrap {
     display: flex;
+    
     /*flex-direction: row;*/
-    justify-content: space-between;
+    /*justify-content: space-between;*/
     /*overflow: visible;*/
     background: rgb(37, 119, 235);
     width: 40%;
@@ -114,7 +119,7 @@ main {
     padding-left: 40px;
     padding-right: 40px;
     text-align: justify;
-    border: solid rgba(202, 247, 176, 0.7); 
+    border: solid rgba(227, 231, 231, 0.7); 
     border-width: 50px;
     overflow: auto;
 }
@@ -143,7 +148,7 @@ main {
     
     text-align: center;
     width: 100%;
-    border: solid rgba(202, 247, 176, 0.7); 
+    border: solid rgba(227, 231, 231, 0.7); 
     border-width: 50px;
    
 }
@@ -193,4 +198,46 @@ footer {
     height: 45px;
     background: rgb(135, 209, 231);
 }
+
+
+
+/* NAV MENU --------------- */
+
+ul{
+    margin:0; 
+    padding:0;
+}
+
+.menu {
+    display: flex;  
+    flex-direction: column;
+    flex-direction:row;
+    justify-content:space-between;
+    margin-right: 50px;
+}
+
+.menu li {
+    display: block;
+    /*list-style-type: none;*/
+    text-transform: uppercase;
+}
+
+.menu li a{
+    display: flex;
+    text-align: center;
+    text-decoration: none;
+    color:rgb(235, 248, 250);
+    height: 100%;
+    padding: 1rem;
+}
+
+.menu li a:hover{
+    background:rgb(166, 236, 245);
+    color:#fff;
+  }
+ 
+nav ul ul {
+      display: none;
+  }
+
 
