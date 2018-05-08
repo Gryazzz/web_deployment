@@ -4,7 +4,7 @@ body {
     margin: 0;
     padding: 0;
     max-width: 100%;
-    background: rgb(175, 240, 245);
+    background: rgb(21, 66, 70);
 }
 
 header,
@@ -12,16 +12,12 @@ aside,
 main,
 footer {
     background: rgb(186, 209, 223);
-    
-    display: flex;
-    /*align-items: center;*/
-    /*justify-content: center;*/
 }
 
 .grid {
     display: grid;
     grid-template-columns: 3fr 2fr;
-    grid-template-rows: 45px calc(100vh - 90px) 45px; /*limitation on height*/
+    grid-template-rows: 50px calc(100vh - 100px) 50px; /*limitation on height*/
     /*grid-template-rows: repeat(3, 100px);*/
     /*grid-gap: 2px;*/
     
@@ -32,29 +28,77 @@ footer {
 header {
     grid-row: 1;
     grid-column: 1 / 3;
+    background: rgb(117, 168, 245);
+}
+
+.header-wrap { /*split 2 divs in both sides (home and navigation) don't touch */
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    height: 45px;
+    width: 100%;
     background: rgb(192, 214, 248);
 }
 
-.header-wrap {
-    /*position: sticky;*/
-    /*top: 0;*/
-    align-items: center;
-    display: flex;
-    width: 100%;
-}
-
 .main-link-wrap {
-    margin-left: 30px;
-    float: left;
+    /*margin-left: 30px;*/
+    /*float: left;*/
     
 }
 
 .nav-wrap {
-    float: right;
-    position: absolute;
-    right: 15px;
-    
+    display: flex;
+    /*flex-direction: row;*/
+    justify-content: space-between;
+    /*overflow: visible;*/
+    background: rgb(37, 119, 235);
+    width: 40%;
+    height: 100%;
+    /*justify-content: flex-end;*/
+    /*flex-direction: row;*/
 }
+
+.nav-wrap a {
+    width: 100%;
+    text-align: center;
+    /*display: inline-block;*/
+    color: rgb(202, 231, 236);
+    border: solid rgb(245, 74, 231);
+    /*border-bottom: 1px solid #ddd;*/
+}
+
+.nav-wrap a:hover {
+    color: #72cdf7;
+    /*border-bottom-color: #c14400;*/
+}
+
+/*.dropdown-menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    
+    transition: max-height .4s, opacity .3s;
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.dropdown-menu > .nav-link {
+    height: 100%;
+    transition: transform .4s;
+    transform: translateY(-300%);
+    background: #aaa; /* Makes the menu effects visible on close */ 
+
+
+/*.nav-div-wrap {
+    display: flex;
+    /*flex-direction: row;*/
+    /*align-items: center;*/
+    /*justify-content: space-between;*/
+    
 
 
 /*MAIN ------------------------------ */
@@ -65,7 +109,7 @@ main {
 }
 
 .main-wrap {
-    height: calc(100vh - 90px);
+    height: calc(100vh - 100px);
     float: left;
     padding-left: 40px;
     padding-right: 40px;
@@ -90,11 +134,13 @@ main {
 .aside {
     grid-row: 2;
     grid-column: 2 / 3;
+    display: flex;
     overflow: auto;
   }
 
 .aside-wrap {
     position: relative;
+    
     text-align: center;
     width: 100%;
     border: solid rgba(202, 247, 176, 0.7); 
@@ -130,9 +176,21 @@ main {
 footer {
     grid-row: 3;
     grid-column: 1 / 3;
-    order: 1;
+    /*order: 1;*/
     background: rgb(82, 135, 151);
-    align-items: center;
+    display: flex;
+    align-items: flex-end;
     justify-content: center;
+    /*align-items: center;
+    justify-content: center;*/
   }
+
+.footer-wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    background: rgb(135, 209, 231);
+}
 
