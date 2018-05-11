@@ -101,8 +101,20 @@ section {
 }
 
 .content {
-  display: flex;
-  flex-wrap: wrap;
+  /* display: flex; */
+  /* flex-wrap: wrap; */
+  /* align-content: flex-start */
+}
+
+.img-fluid {
+  margin: 5%;
+  /* margin-right: 5%; */
+  
+}
+
+.main-p {
+  text-align: justify;
+  padding: 5%;
 }
 
 /* ASIDE ------------------------- */
