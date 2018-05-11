@@ -2,6 +2,7 @@ body {
   font-family: 'Source Sans Pro', sans-serif;
   margin: 0;
   padding: 0;
+  padding-top: 4%;
   max-width: 100%;
   background: rgb(46, 136, 145);
 }
@@ -41,7 +42,7 @@ aside {
     "footer footer";
 }
 
-@media all and (max-width: 800px)  {
+@media all and (max-width: 880px)  {
   .wrapper {
 
       grid-template-columns: auto;
@@ -52,6 +53,9 @@ aside {
       "section"
       "aside"
       "footer";
+  }
+  body {
+    padding-top: 7%;
   }
 }
 
@@ -65,7 +69,7 @@ aside{
 }
 
 section {
-  background: rgb(219, 155, 72);
+  background: rgb(246, 247, 199);
 }
 
 /* We tell all items to be 100% width, via flex-basis */
@@ -74,22 +78,27 @@ section {
 } */
 
 /* HEADER ---------------------- */
+/* header {
+  display: flex;
+  justify-content: center;
+} */
+
+
+/* OLD VERSION -------
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: stretch;
+  
 }
 
 .homebutton {
   margin-left: 10%;
-  
 }
 
 .navigation {
   margin-right: 5%;
-  
-}
+}*/
 
 /* SECTION ----------------------- */
 section { 
@@ -135,17 +144,20 @@ aside {
  
 }
 
-@media all and (max-width: 1000px)  {
+@media all and (max-width: 1200px)  {
   .table-wrap {
 
       grid-template-columns: 1fr;
       padding-right: 5%;
       grid-gap: 5%;
   }
+  body {
+    padding-top: 5%;
+  }
   
 }
 
-@media all and (max-width: 800px)  {
+@media all and (max-width: 880px)  {
   .table-wrap {
 
       grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -154,12 +166,15 @@ aside {
   }
 }
 
-@media all and (max-width: 550px)  {
+@media all and (max-width: 576px)  {
   .table-wrap {
 
       grid-template-columns: 1fr;
       padding-right: 5%;
       grid-gap: 5%;
+  }
+  body {
+    padding-top: 8%;
   }
 }
 
