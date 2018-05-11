@@ -96,33 +96,73 @@ section {
   display: flex;
   flex-direction: column;
   padding: 5%;
+  
   /*align-items: center;
   justify-content: center; */
 }
 
-.content {
-  /* display: flex; */
-  /* flex-wrap: wrap; */
-  /* align-content: flex-start */
+section h1 {
+  margin-left: 5%;
+  margin-bottom: 5%;
 }
 
 .img-fluid {
-  margin: 5%;
-  /* margin-right: 5%; */
+  margin-left: 5%;
+  margin-bottom: 3%;
+  padding-right: 5%;
   
 }
 
 .main-p {
   text-align: justify;
-  padding: 5%;
+  margin-left: 5%;
+  
 }
 
 /* ASIDE ------------------------- */
 aside {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
+  padding: 5%;
 }
+
+.table-wrap {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  /* grid-gap: 5%; */
+  margin-top: 7%;
+ 
+}
+
+@media all and (max-width: 1000px)  {
+  .table-wrap {
+
+      grid-template-columns: 1fr;
+      padding-right: 5%;
+      grid-gap: 5%;
+  }
+  
+}
+
+@media all and (max-width: 800px)  {
+  .table-wrap {
+
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /* padding-right: 5%; */
+      grid-gap: 5%;
+  }
+}
+
+@media all and (max-width: 550px)  {
+  .table-wrap {
+
+      grid-template-columns: 1fr;
+      padding-right: 5%;
+      grid-gap: 5%;
+  }
+}
+
 
 /* FOOTER ------------------------ */
 footer {
