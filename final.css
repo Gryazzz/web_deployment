@@ -60,9 +60,6 @@ aside {
 }
 
 /* element colors*/
-header, footer {
-    background: rgb(222, 237, 247);
-}
 
 aside{
   background: rgb(246, 247, 199);
@@ -78,10 +75,31 @@ section {
 } */
 
 /* HEADER ---------------------- */
-/* header {
-  display: flex;
-  justify-content: center;
-} */
+
+.navbar {
+  /* display: flex; */
+  /* align-items: stretch; */
+
+}
+
+.navbar-brand {
+  margin-left: 10%;
+  padding: 0.5%;
+  
+}
+
+.navbar-brand:hover {
+  color: rgb(213, 250, 252);
+  background: rgb(52, 182, 199);
+}
+
+.navbar-collapse {
+  margin-right: 5%;
+}
+
+.nav-item a:hover {
+  background: rgb(147, 164, 172);
+}
 
 
 /* OLD VERSION -------
@@ -184,4 +202,18 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  background: rgb(31, 109, 161);
+}
+
+.copyright {
+  color: aliceblue;
+}
+
+.copyright a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+.copyright a:hover {
+  color: rgb(171, 245, 245);
 }
