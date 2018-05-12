@@ -1,0 +1,20 @@
+.ccontainer {
+    display: flex;
+    flex-direction: column;
+    background: rgba(247, 198, 139, 0.644);
+  }
+
+  .main-and-sidebar-wrapper {
+    display: flex;
+    flex-direction: row;
+    background: rgba(103, 103, 247, 0.596);
+  }
+
+  .main {
+    flex: 3;
+    margin-right: 60px;
+  }
+  .sidebar {
+    flex: 1;
+  }
+
