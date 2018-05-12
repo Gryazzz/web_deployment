@@ -88,6 +88,7 @@ aside, section {
 .navbar-brand:hover {
   color: rgb(213, 250, 252);
   background: rgb(52, 182, 199);
+  box-shadow: 1px 1px 2px 2px rgba(52, 182, 199, 0.81);
 }
 
 .navbar-collapse {
@@ -96,6 +97,7 @@ aside, section {
 
 .nav-item a:hover {
   background: rgb(147, 164, 172);
+  box-shadow: 1px 1px 2px 2px rgba(147, 164, 172, 0.81);
 }
 
 
@@ -130,14 +132,14 @@ section {
   padding: 5%;
 }
 
-section h1 {
+/* section h1 {
   margin-left: 5%;
   margin-bottom: 5%;
-}
+} */
 
 .cont-wrap {
-  padding-right: 5%;
-}
+  padding-right: 5%; /*not to stick to the edge on a small screen*/
+ }
 
 .cont-wrap img {
   margin-left: 5%;
@@ -206,6 +208,12 @@ aside {
   }
 }
 
+.table-wrap a:hover {
+  border: solid 0.5px  rgba(73, 252, 213, 0.918);
+  box-shadow: 1px 1px 2px 2px rgba(73, 252, 213, 0.918);
+  box-shadow: -0.3px -0.3px 2px 2px rgba(73, 252, 213, 0.918);
+}
+
 
 /* FOOTER ------------------------ */
 footer {
@@ -253,14 +261,24 @@ footer::before {
 .main-comp {
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
 
 .main-comp H1,  .main-comp H2 {
-  width: 100%;
-  margin-left: 15%;
-  margin-bottom: 5%;
+  
+  align-self: flex-start;
+  margin: 0%;
+  padding: 0%;
+  margin-bottom: 5px;
 
 }
+
+/* .test {
+  align-self: flex-start;
+  height: 2px;
+  width: 55%;
+  background: rgba(155, 240, 252, 0.548);
+} */
 
 .img1 {
   grid-area: img1;
@@ -302,3 +320,12 @@ footer::before {
   }
 }
 
+
+.main H1, .sidebar H2, .main-comp H1,  .main-comp H2, .table-wrap-comp .img1, .table-wrap-comp .img2, .table-wrap-comp .img3,
+.table-wrap-comp .img4 {
+  color: rgb(54, 102, 86);
+}
+
+.main H1, .main-comp H1 {
+  border-bottom: solid  rgb(244, 248, 248);
+}
