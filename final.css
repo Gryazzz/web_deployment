@@ -4,7 +4,7 @@ body {
   padding: 0;
   padding-top: 4%;
   max-width: 100%;
-  background: rgb(114, 139, 141);
+  background: rgb(44, 135, 141);
 }
 
 /* *{ 
@@ -101,8 +101,8 @@ aside, section {
 
 .navbar-brand:hover {
   color: rgb(213, 250, 252);
-  background: rgb(52, 182, 199);
-  box-shadow: 0px 0px 1px 1px rgba(52, 182, 199, 0.81);
+  background: rgb(93, 221, 238);
+  box-shadow: 0px 0px 1px 1px rgba(93, 221, 238, 0.81);
 }
 
 .navbar-collapse {
