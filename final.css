@@ -196,7 +196,9 @@ aside {
   body {
     padding-top: 8%;
   }
-
+  section {
+    padding-bottom: 100px;
+  }
   
 }
 
