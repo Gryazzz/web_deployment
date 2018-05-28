@@ -329,7 +329,7 @@ footer::before {
   border-bottom: solid  rgb(215, 218, 218);
 }
 
-.embed-responsive-4by3 {
-  overflow: scroll;
-  -webkit-overflow-scrolling: touch;
+.iframe-parent {
+  overflow: auto!important;
+  -webkit-overflow-scrolling: touch!important;
 }
