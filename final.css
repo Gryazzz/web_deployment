@@ -333,3 +333,8 @@ footer::before {
   overflow: auto!important;
   -webkit-overflow-scrolling: touch!important;
 }
+
+.iframe-ch {
+  overflow: scroll;
+  -webkit-overflow-scrolling: touch;
+}
